@@ -1,6 +1,7 @@
 body, html{
     margin:0;
     width: 100%;
+    height: 100%;
     
 }
 #container{
@@ -38,7 +39,7 @@ button>a>img{
     width: 170px;
     height: 27px;
 }
-form{
+#srch{
     display: flex;
     justify-content: center;
 }
@@ -48,6 +49,107 @@ form{
 .icon_user{
     margin-left: 50px;
 }
+/* login page */
+#container_form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+    background: url(/img/Nike-ASW-Signature-Collection-Group.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+#form_box{
+    position: relative;
+    width: 400px;
+    height: 450px;
+    background: transparent;
+    background-color: rgba(255, 255,255, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid rgba(255, 255,255, 0.5);
+    border-radius: 20px;
+    backdrop-filter: blur(1px);
+    }
+h3{
+    font-size: 2em;
+    color: #4E4E4E;
+    text-align: center;
+}
+.inputbox{
+    position: relative;
+    margin: 30px 0px;
+    width: 310px;
+    border-bottom: 2px solid #fff;
+}
+.inputbox label{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    color: #4E4E4E;
+    font-size: 1em;
+    pointer-events: none;
+}
+input:focus ~label,
+input:focus ~:valid{
+    top: -5px;
+}
+.inputbox input {
+    width: 100%;
+    height: 50px;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    padding: 0px 35px 0px 5px;
+    color: #4E4E4E;
+}
+.forget{
+    margin: -15px 0 15px;
+    font-size: .9em;
+    color: #4E4E4E;
+    display: flex;
+    justify-content: center;
+}
+.forget label input{
+    margin-right: 3px; 
+}
+.forget label a {
+    color: #4E4E4E;
+    text-decoration: none;
+}
+.forget label a:hover{
+    text-decoration: underline;
+}
+button{
+    width: 100%;
+    height: 40px;
+    border-radius: 40px;
+    background-color: #fff;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: 600;
+}
+.register{
+   font-size: .9em; 
+   color: #4E4E4E;
+   text-align: center;
+   margin: 25px 0 10px;
+}
+.register p a {
+    text-decoration: none;
+    color: #4E4E4E;
+    font-weight: 600;
+}
+.register p a{
+    text-decoration: underline;
+}
+
 
 
 
