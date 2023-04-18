@@ -42,32 +42,27 @@ form{
     display: flex;
     justify-content: center;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*body{
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 2fr 4fr 1fr;
-    background-color: ;
+.icon_shopping{
+    margin-right: 50px;
 }
-header{
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 2fr;
-    background-color: darkslategrey;
-    color: aliceblue;
+.icon_user{
+    margin-left: 50px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+
 }
 header>ul{
     display: flex;
