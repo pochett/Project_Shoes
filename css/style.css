@@ -3,7 +3,7 @@ body, html{
     height: 100%;
     
 }
-#container{
+/*#container{
     display: grid;
     grid-template-rows: auto 1fr auto;
     grid-template-columns: 1fr;
@@ -69,7 +69,7 @@ ul{
 .icon ul{
     display: flex;
     justify-content: space-evenly;
-}
+}*
 
 
 main{
@@ -102,7 +102,7 @@ button>a>img{
     width: 170px;
     height: 27px;
 }
-/* search bar in nav*/
+/* search bar in nav
 
 .search-box{
     position: absolute;
@@ -168,8 +168,8 @@ button>a>img{
     min-height: 100vh;
     width: 100%;
     background: url(/img/Nike-ASW-Signature-Collection-Group.jpg) no-repeat;
-    background-position: center;
-    background-size: cover;
+    background-position:center;
+    background-size: auto;
 }
 #form_box{
     position: relative;
@@ -261,9 +261,10 @@ button{
     text-decoration: underline;
 }
 .titre{
-    border:1px solid #C8D2D4 ;
+    border:1px solid #E9EDED ;
     text-align: center;
-    background-color: #C8D2D4;
+    background-color: #E9EDED;
+    font-family: anton;
 }
 #membre{
     color: #4E4E4E;
@@ -273,8 +274,18 @@ button{
 }
 #discription{
     text-align: center;
-    background-color: #C8D2D4;
+    background-color: #E9EDED;
     padding: 5px 250px 5px 0px;
+    font-family: anton;
+    margin-bottom: 20px;
+}
+.container_img{
+    display: flex;
+    justify-content: center;
+}
+.container_img img{
+    margin-right: 20px;
+    margin-bottom: 30px;
 }
 
 

@@ -6,12 +6,71 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
     <script src="fa/js/all.js"></script>
+    <script src="fontawesome-free-6.4.0-web/js/all.js"></script>
+    <link rel="stylesheet" href="fontawesome-free-6.4.0-desktop/fontawesome-free-6.4.0-desktop/">
+    <link rel="stylesheet" href="css/femme.css">
     <link rel="stylesheet" href="css/style.css">
     
 </head>
 <body> 
-    <div id="container">
-        <header>
+    <div id="container1">
+        <nav>
+
+            <a href="index.html"><img src="images/marques&logo/logo_2.0.svg" alt="" id="logo"></a>
+    
+            <div class="onglets">
+    
+                <div class="link">
+                    <input type="checkbox" id="check">
+                    <div class="marque">Marques</div>
+                    <div class="marques">
+                        <a href="#adidas" id="tricherie" class="link">
+                            <div>adidas</div>
+                        </a>
+                        <a href="#adidas" class="link">
+                            <div>Adidas</div>
+                        </a>
+                        <a href="#nike" class="link">
+                            <div>Nike</div>
+                        </a>
+                        <a href="#reebok" class="link">
+                            <div>Reebok</div>
+                        </a>
+                        <a href="#vans" class="link">
+                            <div>Vans</div>
+                        </a>
+                    </div>
+                </div>
+    
+                <a href="homme.html">
+                    <p class="link">Homme</p>
+                </a>
+    
+                <a href="femme.html">
+                    <p class="link">Femme</p>
+                </a>
+    
+                <form>
+                    <input type="search" placeholder="Rechercher">
+                </form>
+    
+                <a href="index.html">
+                    <p class="link"><i class="fa-solid fa-house" style="color: #000000;"></i></p>
+                </a>
+    
+                <a href="login.html">
+                    <p class="link"><i class="fa-solid fa-user" style="color: black;"></i></p>
+                </a>
+    
+                <a href="panier.html">
+                    <p class="link"><i class="fa-solid fa-cart-shopping" style="color: black;"></i></p>
+                </a>
+    
+            </div>
+    
+        </nav>
+    
+        <!--<header>
               <div class="femme">
                 <ul>
                     <li><a href="femme.html">FEMME</a></li>
@@ -38,7 +97,7 @@
                     <li class="icon_shopping"><i class="fa-solid fa-bag-shopping fa-xl" style="color: #ACB4BD;"></i></li>
                 </ul>
               </div>
-        </header>
+        </header>-->
        
         <main>
             <div class="titre">
@@ -49,14 +108,57 @@
             <div class="image_home">
                 <img src="img/nike-cryptokicks-810x524.jpg" alt="">
             </div>
-            <div id="discription">
-                <pre> 
-                     ZAPATOS was created to bring you the latest in Streetwear trends from Top Streetwear Brands Like NIKE, REBOOK, Adidas, VANS and more. ZAPATOS remains the largest Store for 
-                     sneakers Since it opened its doors in 2000. This includes Kazbah Marketplace which bring you upcoming brands and styles you can’t find anywhere else and PLNDR 
-                    The largest Discount for Streetwear. From the latest Sneakers ZAPALOS has what your looking for in Women’s and Men’s Fashion.</pre>
+            <div class="container_img">
+                <a href="femme.html"><img src="img/img1.jpg" alt="" width="500px"></a>
+                <a href="homme.html"><img src="img/img2.jpg" alt=""width="500px"></a>
+                <a href="homme.html"><img src="img/img3.jpg" alt=""width="500px"></a>
+                
             </div>
-        </main>
-        <footer></footer>
+        
+
+        <div class="container">
+            <div class="brands">
+                <div class="brand">
+                    <a href="#adidas" id="adidasgauche">
+                        <img src="images/marques&logo/1.jpg" alt="adidas">
+                    </a>
+                </div>
+    
+                <div class="brand">
+                    <a href="#nike">
+                        <img src="images/marques&logo/2.jpg" alt="nike">
+                    </a>
+                </div>
+    
+                <div class="brand">
+                    <a href="#reebok">
+                        <img src="images/marques&logo/3.png" alt="reebok">
+                    </a>
+                </div>
+    
+                <div class="brand">
+                    <a href="#vans" id="vansdroite">
+                        <img src="images/marques&logo/4.png" id="vansdroite" alt="vans">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div id="discription">
+            <pre> 
+                 ZAPATOS was created to bring you the latest in Streetwear trends from Top Streetwear Brands Like NIKE, REBOOK, Adidas, VANS and more. ZAPATOS remains the largest Store for 
+                 sneakers Since it opened its doors in 2000. This includes Kazbah Marketplace which bring you upcoming brands and styles you can’t find anywhere else and PLNDR 
+                The largest Discount for Streetwear. From the latest Sneakers ZAPALOS has what your looking for in Women’s and Men’s Fashion.</pre>
+        </div>
+    </main>
+        <footer>
+            <p>&copy; Contactez-nous au 06 48 32 95 35</p>
+            <div class="social">
+                <p><i class="fa-brands fa-facebook"></i></p>
+                <p><i class="fa-brands fa-twitter"></i></p>
+                <p><i class="fa-brands fa-square-instagram"></i></p>
+                <p><i class="fa-brands fa-linkedin"></i></p>
+            </div>
+        </footer>
 
 
 
@@ -64,66 +166,5 @@
 
 
     </div>
-
-
-
-
-
-
-
-
-
-    <!-- <header>
-            <ul>
-                <li><a href="femme.html">FEMME</a></li>
-                <li><a href="homme.html">HOMME</a></li>
-                <li><a href="index.html"> <img src="" alt=""> </a> </li>
-                <li class="icon"></li>
-                <li class="icon"></li>
-                <li class="icon"></li>
-                <li > <form action="">
-                    <input type="text" placeholder="Search" class="search-bar">
-                    <button type="submit" class="search">
-                        <a href="https://www.karmaloop.com/">
-                            <img src="/img/350-3506490_search-icon-small-search-icon-small-png.png" alt="" >
-                        </a>
-                        
-                    </button>
-    
-                </form></li>
-            </ul>
-            
-            
-    </header>
-
-    <main>
-        <section>
-            <img src="" alt="">
-        </section>
-        <section>
-            <ul>
-                <li><a href=""> <img src="" alt="NIKE"> </a> </li>
-                <li><a href=""> <img src="" alt="ADIDAS"> </a> </li>
-                <li><a href=""> <img src="" alt="REBOOK"> </a> </li>
-                <li><a href=""> <img src="" alt="VANS"> </a> </li>
-            </ul>
-        </section>
-        <section>
-            <img src="" alt="">
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum repudiandae ipsa amet molestias veniam fugiat rerum. Aliquam porro dolor, similique odit dolorem eveniet maxime quia, quidem voluptatibus animi, ea doloribus?
-            </p>
-        </section>
-    </main>
-
-    <footer>
-        <ul>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-        </ul>
-    </footer> -->
 </body>
 </html>
