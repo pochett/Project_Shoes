@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+body{
+    font-family: 'Open sans', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* HEADER */
+
+nav{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #fff;
+    position: sticky;
+    top: 0;
+}
+
+nav h1{
+    font-size: 20px;
+    
+}
+
+nav .onglets{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+nav .onglets p{
+    font-size: 17px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+nav .onglets input{
+    margin: 8px 20px;
+    padding: 15px;
+    border-radius: 30px;
+    border: none;
+    outline: none;
+    background-color: #f2f2f2;
+}
+
+/* TITRES */
+
+header h1{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+ 
+}
+h3{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* TOUTES LES CARTES DE CHAUSSURES */
+
+.main{
+    margin:20px;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 80px;
+    margin-bottom: 40px;
+}
+
+.cards .card{
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.cards .card img{
+    width: 300px;
+    height: 400px;
+} 
+
+.cards .card .card-header{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;   
+}
+
+.cards .card .card-body p{
+    margin-top: -10px;
+
+}
+
+/* MARQUES */
+
+.brands{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#adidasgauche{
+    padding-left: 100px;
+}
+#vansdroite{
+    padding-right: 100px;
+}
+
+/* FOOTER */
+
+footer{
+    margin-top: 50px;
+    padding: 30px;
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+footer .social{
+    display: flex;
+}
+
+footer .social p{
+    margin-right: 15px;
+    border: 1px solid white;
+    border-radius: 100%;
+    padding: 5px;
+    text-align: center;
+    width: 20px;
+    cursor: pointer;
+}
+
+/* RESPONSIVE */
+
+@media screen and (max-width: 640px){
+    nav .onglets .link, nav h1{
+        display: none;
+    }
+    .cards .card{
+        margin-left: 10px;
+    }
+    .cards .card img{
+        width: 300px;
+
+    }
+}
