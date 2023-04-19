@@ -76,6 +76,10 @@ div.marque{
     display: block;
 }
 
+#check:checked~.marque{
+    color: red;
+}
+
 .marque{
     text-decoration: underline;
 }
