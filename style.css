@@ -19,7 +19,7 @@ nav{
 
 nav h1{
     font-size: 20px;
-
+    
 }
 
 nav .onglets{
@@ -97,10 +97,25 @@ h3{
 
 }
 
+/* MARQUES */
+
+.brands{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#adidasgauche{
+    padding-left: 100px;
+}
+#vansdroite{
+    padding-right: 100px;
+}
+
 /* FOOTER */
 
 footer{
-    margin-top: 100px;
+    margin-top: 50px;
     padding: 30px;
     background-color: #000;
     color: #fff;
