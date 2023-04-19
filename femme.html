@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FEMME</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/femme.css">
     <script src="fontawesome-free-6.4.0-web/js/all.js"></script>
     <link rel="stylesheet" href="fontawesome-free-6.4.0-desktop/fontawesome-free-6.4.0-desktop/">
 </head>
@@ -14,40 +15,73 @@
 
     <nav>
 
-        <a href="index.html"><img src="images" alt=""></a>
+        <a href="index.html"><img src="images/marques&logo/logo_2.0.svg" alt="" id="logo"></a>
 
         <div class="onglets">
-<!--        peut etre ajouter:
-            <p class="link">Marques</p>     
--->
-            <p class="link">Marques</p></a>
-            <a href="homme.html"><p class="link">Homme</p></a>
-            <a href="femme.html"><p class="link">Femme</p></a>
-            
-          <form>
-            <input type="search" placeholder="Rechercher">
-          </form>
 
-          <a href="compte.html"><p><i class="fa-solid fa-user"></i></p></a>
-          <a href="panier.html"><p><i class="fa-solid fa-cart-shopping"></i></p></a>
+            <div>
+                <input type="checkbox" id="check">
+                <div class="marque">Marques</div>
+                <div class="marques">
+                    <a href="#adidas" id="tricherie" class="link">
+                        <div>adidas</div>
+                    </a>
+                    <a href="#adidas" class="link">
+                        <div>Adidas</div>
+                    </a>
+                    <a href="#nike" class="link">
+                        <div>Nike</div>
+                    </a>
+                    <a href="#reebok" class="link">
+                        <div>Reebok</div>
+                    </a>
+                    <a href="#vans" class="link">
+                        <div>Vans</div>
+                    </a>
+                </div>
+            </div>
+
+            <a href="homme.html">
+                <p class="link">Homme</p>
+            </a>
+
+            <a href="femme.html">
+                <p class="link">Femme</p>
+            </a>
+
+            <form>
+                <input type="search" placeholder="Rechercher">
+            </form>
+
+            <a href="index.html">
+                <p class="link"><i class="fa-solid fa-house" style="color: #000000;"></i></p>
+            </a>
+
+            <a href="login.html">
+                <p class="link"><i class="fa-solid fa-user" style="color: black;"></i></p>
+            </a>
+
+            <a href="panier.html">
+                <p class="link"><i class="fa-solid fa-cart-shopping" style="color: black;"></i></p>
+            </a>
 
         </div>
+
     </nav>
 
+
     <header>
-        <h1>FEMME</h1>
+        <h1>-CHAUSSURES POUR FEMME-</h1>
     </header>
 
 
-
-    <h3 id="adidas">ADIDAS</h3>
-
+    <h2 id="adidas">ADIDAS</h2>
 
 
-    <section class="main"> 
+    <section class="main">
 
         <div class="cards">
-    
+
             <div class="card">
                 <img src="images/femme/adidas/adidas1.jpg" alt="1">
                 <div class="card-header">
@@ -136,16 +170,14 @@
                 </div>
             </div>
 
-        </div>    
+        </div>
 
 
-
-        <h3 id="nike">NIKE</h3>       
-        
+        <h2 id="nike">NIKE</h2>
 
 
         <div class="cards">
-    
+
             <div class="card">
                 <img src="images/femme/nike/83ba263a791e45ab99ed68133e33ca5c.jpg" alt="1">
                 <div class="card-header">
@@ -223,16 +255,14 @@
                 </div>
             </div>
 
-        </div> 
+        </div>
 
 
+        <h2 id="reebok">REEBOK</h2>
 
-        <h3 id="rebook">REBOOK</h3>   
-
-        
 
         <div class="cards">
-    
+
             <div class="card">
                 <img src="images/femme/rebook/03ecb6165a05466e8db605e81c0f022d.jpg" alt="1">
                 <div class="card-header">
@@ -299,16 +329,14 @@
                 </div>
             </div>
 
-        </div> 
+        </div>
 
 
-
-        <h3 id="vans">VANS</h3>     
-        
+        <h2 id="vans">VANS</h2>
 
 
         <div class="cards">
-    
+
             <div class="card">
                 <img src="images/femme/vans/63519b33a53147708945b0e05fb3edcc.jpg" alt="1">
                 <div class="card-header">
@@ -355,7 +383,7 @@
                 </div>
             </div>
 
-        </div> 
+        </div>
 
     </section>
 
@@ -363,42 +391,43 @@
     <div class="container">
         <div class="brands">
             <div class="brand">
-                <a href="#adidas">
-                    <img src="images/1.jpg" alt="adidas">
+                <a href="#adidas" id="adidasgauche">
+                    <img src="images/marques&logo/1.jpg" alt="adidas">
                 </a>
             </div>
-    
+
             <div class="brand">
                 <a href="#nike">
-                    <img src="images/2.jpg" alt="nike">
+                    <img src="images/marques&logo/2.jpg" alt="nike">
                 </a>
             </div>
-    
+
             <div class="brand">
-                <a href="#rebook">
-                    <img src="images/3.png" alt="rebook">
+                <a href="#reebok">
+                    <img src="images/marques&logo/3.png" alt="reebok">
                 </a>
             </div>
-    
+
             <div class="brand">
-                <a href="#vans">
-                    <img src="images/4 (1)_resultat.png" id="vansdroite" alt="vans">
+                <a href="#vans" id="vansdroite">
+                    <img src="images/marques&logo/4.png" id="vansdroite" alt="vans">
                 </a>
             </div>
         </div>
     </div>
-    
 
-<footer>
-    <p>&copy; Contactez-nous au 06 48 32 95 35</p>
-    <div class="social">
-        <p><i class="fa-brands fa-facebook"></i></p>
-        <p><i class="fa-brands fa-twitter"></i></p>
-        <p><i class="fa-brands fa-square-instagram"></i></p>
-        <p><i class="fa-brands fa-linkedin"></i></p>
-    </div>
-</footer>
+
+    <footer>
+        <p>&copy; Contactez-nous au 06 48 32 95 35</p>
+        <div class="social">
+            <p><i class="fa-brands fa-facebook"></i></p>
+            <p><i class="fa-brands fa-twitter"></i></p>
+            <p><i class="fa-brands fa-square-instagram"></i></p>
+            <p><i class="fa-brands fa-linkedin"></i></p>
+        </div>
+    </footer>
 
 
 </body>
+
 </html>

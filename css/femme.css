@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Open+Sans&display=swap');
+body{
+    font-family: 'Open sans', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* HEADER */
+
+nav{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #fff;
+    position: sticky;
+    top: 0;
+    font-family: anton;
+    font-weight: lighter;
+    height: ;
+}
+
+#tricherie{
+    color: #fff;
+  font-size: xx-small;
+    
+}
+
+nav .onglets{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+nav .onglets p{
+    font-size: 17px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+nav .onglets input{
+    margin: 8px 20px;
+    padding: 15px;
+    border-radius: 30px;
+    border: none;
+    outline: none;
+    background-color: #f2f2f2;
+}
+
+#logo{
+    width: 300px;
+}
+
+/* MARQUES */
+
+div.marque{
+    padding: 18px;
+    text-align: center;
+}
+
+.marques{
+    display: none;
+    transition: 1s;
+    padding-left: 26px;
+}
+
+#check{ 
+    margin: 0;
+    height: 80px;
+    width: 100px;
+    position: absolute;
+    opacity: 0;
+    z-index: 6;
+    cursor: pointer;
+}
+#check:checked~.marques{
+    display: block;
+}
+
+.marque{
+    text-decoration: underline;
+}
+
+.link{
+    color: black;
+}
+
+/* TITRES */
+
+header h1{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-family: anton;
+    font-weight: lighter;
+}
+
+h2{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-family: anton;
+    font-weight: lighter;
+    text-decoration-line: underline;
+}
+
+/* TOUTES LES CARTES DE CHAUSSURES */
+
+.main{
+    margin:20px;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 80px;
+    margin-bottom: 40px;
+}
+
+.cards .card{
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.cards .card img{
+    width: 300px;
+    height: 400px;
+} 
+
+.cards .card .card-header{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;   
+}
+
+.cards .card .card-body p{
+    margin-top: -10px;
+
+}
+
+/* MARQUES */
+
+.brands{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+/* FOOTER */
+
+footer{
+    margin-top: 50px;
+    padding: 30px;
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+footer .social{
+    display: flex;
+}
+
+footer .social p{
+    margin-right: 15px;
+    border: 1px solid white;
+    border-radius: 100%;
+    padding: 5px;
+    text-align: center;
+    width: 20px;
+    cursor: pointer;
+}
+
+/* RESPONSIVE */
+
+@media screen and (max-width: 640px){
+    nav .onglets .link, nav h1{
+        display: none;
+    }
+    .cards .card{
+        margin-left: 10px;
+    }
+    .cards .card img{
+        width: 300px;
+
+    }
+}
+
+
