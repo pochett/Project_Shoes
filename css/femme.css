@@ -18,7 +18,6 @@ nav{
     top: 0;
     font-family: anton;
     font-weight: lighter;
-    height: ;
 }
 
 #tricherie{
@@ -75,6 +74,10 @@ div.marque{
 }
 #check:checked~.marques{
     display: block;
+}
+
+#check:checked~.marque{
+    color: red;
 }
 
 .marque{
