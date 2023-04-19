@@ -1,14 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg id="Calque_1" data-name="Calque 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 527.75 89.74">
   <defs>
-    <style>
+    <style type="text/css">
+      @font-face
+      {
+        font-family:"Frijole";
+        src: url('Frijole-Regular.ttf') format("truetype");
+      }
+      svg{
+        font-family:'Frijole';
+      }
       .cls-1 {
         font-size: 60.65px;
       }
 
       .cls-1, .cls-2 {
         fill: #231f20;
-        font-family: Frijole, Frijole;
+        font-family: Frijole;
       }
 
       .cls-2 {
