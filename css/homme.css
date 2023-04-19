@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Open+Sans&display=swap');
 body{
     font-family: 'Open sans', sans-serif;
     margin: 0;
@@ -15,10 +16,14 @@ nav{
     background-color: #fff;
     position: sticky;
     top: 0;
+    font-family: anton;
+    font-weight: lighter;
+    height: ;
 }
 
-nav h1{
-    font-size: 20px;
+#tricherie{
+    color: #fff;
+  font-size: xx-small;
     
 }
 
@@ -42,18 +47,61 @@ nav .onglets input{
     background-color: #f2f2f2;
 }
 
+#logo{
+    width: 300px;
+}
+
+/* MARQUES */
+
+div.marque{
+    padding: 18px;
+    text-align: center;
+}
+
+.marques{
+    display: none;
+    transition: 1s;
+    padding-left: 26px;
+}
+
+#check{ 
+    margin: 0;
+    height: 80px;
+    width: 100px;
+    position: absolute;
+    opacity: 0;
+    z-index: 6;
+    cursor: pointer;
+}
+#check:checked~.marques{
+    display: block;
+}
+
+.marque{
+    text-decoration: underline;
+}
+
+.link{
+    color: black;
+}
+
 /* TITRES */
 
 header h1{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
- 
+    font-family: anton;
+    font-weight: lighter;
 }
-h3{
+
+h2{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    font-family: anton;
+    font-weight: lighter;
+    text-decoration-line: underline;
 }
 
 /* TOUTES LES CARTES DE CHAUSSURES */
@@ -102,14 +150,7 @@ h3{
 .brands{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-}
-
-#adidasgauche{
-    padding-left: 100px;
-}
-#vansdroite{
-    padding-right: 100px;
+    justify-content: space-around;
 }
 
 /* FOOTER */
