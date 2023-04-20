@@ -107,10 +107,15 @@ h2{
     text-decoration-line: underline;
 }
 
+.container_img{
+    display: flex;
+    justify-content: space-evenly;
+}
+
 /* TOUTES LES CARTES DE CHAUSSURES */
 
 .main{
-    margin:20px;
+    margin: 5px;
     
     display: flex;
     flex-direction: column;
@@ -185,7 +190,7 @@ footer .social p{
 /* RESPONSIVE */
 
 @media screen and (max-width: 640px){
-    .sara, nav h1{
+    .sara, nav h1, .image_home{
         display: none;
     }
     .cards .card{
@@ -197,4 +202,20 @@ footer .social p{
     }
 }
 
+.titre{
+    border:1px solid #E9EDED ;
+    text-align: center;
+    background-color: #E9EDED;
+    font-family: anton;
+    margin-top: 20px;
+}
 
+#membre{
+    font-family: anton;
+    font-size:smaller;
+    font-weight: lighter;
+}
+
+.image_home{
+    text-align: center;
+}

@@ -1,0 +1,306 @@
+body, html{
+    margin:0;
+    height: 100%;
+    
+}
+/*#container{
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    grid-template-columns: 1fr;
+    height: inherit;
+}
+header{
+    grid-row: 1/2;
+    grid-column: 1/7;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-template-rows: auto;
+    
+    background-color: #4E4E4E;
+    color:#ACB4BD
+}
+
+.femme{
+    
+    grid-column: 1/2;
+    display: flex;
+    justify-content: flex-end;
+}
+
+a:link,a:visited{
+    color: #ACB4BD;
+}
+a:hover,a:active{
+    color: white;
+}
+
+.homme{
+    grid-column: 2/3;
+}
+.homme ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+ul{
+    list-style-type: none;
+}
+
+
+.logo_hd{
+    
+    grid-column: 3/4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.search{
+   
+    grid-column: 4/5;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.icon{
+    
+    grid-column: 5/6;
+
+}
+.icon ul{
+    display: flex;
+    justify-content: space-evenly;
+}*
+
+
+main{
+    grid-row: 2/11;
+    grid-column: 1/7;
+}
+footer{
+    grid-row: 11/14;
+    grid-column: 1/7;
+}
+header>ul{
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+
+}
+a{
+    text-decoration: none;
+}
+button>a>img{
+    width: 20px;
+}
+.search{
+    display: flex;
+    align-items: flex-end;
+}
+.search-bar{
+    border-radius: 5px;
+    margin-left: 500px;
+    width: 170px;
+    height: 27px;
+}
+/* search bar in nav
+
+.search-box{
+    position: absolute;
+    transform: translate(-50%,-50%);
+    background-color: #ACB4BD;
+    height: 20px;
+    border-radius: 40px;
+    padding: 10px;
+    top: 30px;
+    
+}
+.search-box:hover > .search-txt{
+    width: 180px;
+   
+}
+.sarch-box:hover > .search-btn{
+    background-color: #fff;
+}
+.search-btn{
+    color: #e84118;
+    float: right;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #ACB4BD;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 3s;
+}
+.search-txt{
+    border: none;
+    background: none;
+    outline: none;
+    float: left;
+    padding: 0px;
+    color: #fff;
+    font-size: 15px;
+    transition: 3s;
+    line-height: 20px;
+    width: 0px;
+}
+
+
+
+/* icon navbar*/
+
+/*.icon_shopping{
+    margin-right: 20px;
+    padding: 0%;
+}
+.icon_user{
+    padding-left: 700px;
+}*/
+
+
+
+/* login page */
+#container_form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+    background: url(/img/Nike-ASW-Signature-Collection-Group.jpg) no-repeat;
+    background-position:center;
+    background-size: auto;
+}
+#form_box{
+    position: relative;
+    width: 400px;
+    height: 450px;
+    background: transparent;
+    background-color: rgba(255, 255,255, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid rgba(255, 255,255, 0.5);
+    border-radius: 20px;
+    backdrop-filter: blur(1px);
+    }
+h3{
+    font-size: 2em;
+    color: #4E4E4E;
+    text-align: center;
+}
+.inputbox{
+    position: relative;
+    margin: 30px 0px;
+    width: 310px;
+    border-bottom: 2px solid #fff;
+}
+.inputbox label{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    color: #4E4E4E;
+    font-size: 1em;
+    pointer-events: none;
+}
+input:focus ~label,
+input:focus ~:valid{
+    top: -5px;
+}
+.inputbox input {
+    width: 100%;
+    height: 50px;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    padding: 0px 35px 0px 5px;
+    color: #4E4E4E;
+}
+.forget{
+    margin: -15px 0 15px;
+    font-size: .9em;
+    color: #4E4E4E;
+    display: flex;
+    justify-content: center;
+}
+.forget label input{
+    margin-right: 3px; 
+}
+.forget label a {
+    color: #4E4E4E;
+    text-decoration: none;
+}
+.forget label a:hover{
+    text-decoration: underline;
+}
+button{
+    width: 100%;
+    height: 40px;
+    border-radius: 40px;
+    background-color: #fff;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: 600;
+}
+.register{
+   font-size: .9em; 
+   color: #4E4E4E;
+   text-align: center;
+   margin: 25px 0 10px;
+}
+.register p a {
+    text-decoration: none;
+    color: #4E4E4E;
+    font-weight: 600;
+}
+.register p a{
+    text-decoration: underline;
+}
+.titre{
+    border:1px solid #C8D2D4 ;
+    text-align: center;
+    background-color: #C8D2D4;
+}
+#membre{
+    color: #4E4E4E;
+}
+.image_home{
+    text-align: center;
+}
+#discription{
+    text-align: center;
+    background-color: #C8D2D4;
+    padding: 5px 250px 5px 0px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+
+}
+header>ul{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+
+*/
+
+
+

@@ -109,44 +109,45 @@ h2{
 
 /* TOUTES LES CARTES DE CHAUSSURES */
 
-.main{
-    margin:20px;
-    
+.container1{
+    margin: 50px 50px 50px 50px;
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.card{
+    padding-left: 100px;
     display: flex;
+    justify-content: flex-end;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    font-family: anton;
 }
 
-.cards{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    margin-top: 80px;
-    margin-bottom: 40px;
+.price{
+    font-weight: lighter;
+    font-size: xx-large;
 }
 
-.cards .card{
-    margin-right: 20px;
-    cursor: pointer;
+.color{
+    font-family: anton;
 }
 
-.cards .card img{
-    width: 300px;
-    height: 400px;
-} 
-
-.cards .card .card-header{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;   
+.colors{
+    margin-bottom: 20px;
 }
 
-.cards .card .card-body p{
-    margin-top: -10px;
-
+.select{
+    margin-bottom: 20px;
 }
+
+#taille-select{
+    margin-bottom: 20px;
+}
+
 
 /* MARQUES */
 
@@ -182,10 +183,92 @@ footer .social p{
     cursor: pointer;
 }
 
+
+
+
+
+select{
+    display: inline-block;
+    background-color: black;
+    border-radius: 10px;
+    border: 4px double #cccccc;
+    color: #eeeeee;
+    text-align: center;
+    font-family: anton;
+    font-weight: lighter;
+    font-size: 15px;
+    padding: 5px;
+    width: 200px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.colors{
+    display: inline-block;
+    background-color: black;
+    border-radius: 10px;
+    border: 4px double #cccccc;
+    color: #eeeeee;
+    text-align: center;
+    font-family: anton;
+    font-weight: lighter;
+    font-size: 15px;
+    padding: 5px;
+    width: 200px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+}
+
+
+button {
+    display: inline-block;
+    background-color: white;
+    border-radius: 10px;
+    border: 4px double black;
+    color: black;
+    text-align: center;
+    font-family: anton;
+    font-weight: lighter;
+    font-size: 15px;
+    padding: 20px;
+    width: 200px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+}
+button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+button span:after {
+    content: "\00bb";
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: 20px;
+    transition: 0.5s;
+}
+ 
+button:hover span {
+    padding-right: 25px;
+}
+button:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+.container{
+    margin-top: 15pc;
+}
+
 /* RESPONSIVE */
 
 @media screen and (max-width: 640px){
-    .sara, nav h1{
+    .sara, header h2{
         display: none;
     }
     .cards .card{
@@ -193,8 +276,22 @@ footer .social p{
     }
     .cards .card img{
         width: 300px;
-
     }
+    .container1 {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+    
+    .photos{
+        display: flex;
+        justify-content: center;
+        align-items: center
+    }
+    
+    .card{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }    
 }
-
 

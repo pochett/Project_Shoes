@@ -185,7 +185,7 @@ footer .social p{
 /* RESPONSIVE */
 
 @media screen and (max-width: 640px){
-    .sara, nav h1{
+    nav .onglets .link, nav h1{
         display: none;
     }
     .cards .card{
